@@ -1,0 +1,26 @@
+{
+  "name": "portaria-garden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.j",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michelss2018/portaria-garden.git"
+  },
+  "keywords": [],
+  "author": "Michel Souza Santana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michelss2018/portaria-garden/issues"
+  },
+  "homepage": "https://github.com/michelss2018/portaria-garden#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "nunjucks": "^3.2.2"
+  }
+}

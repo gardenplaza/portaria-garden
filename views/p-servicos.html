@@ -1,0 +1,72 @@
+<div id="servicos">
+
+    <h2>Serviços</h2>
+  
+    <div class="buttons">
+      <button>Novo Serviço</button>
+      <button>Histórico</button>
+    </div>
+  
+    {% for servico in servicos %}
+  
+    <section class="blocos">
+      <div class="img">
+        <img src="{{servico.img}}" alt="{{servico.titulo}}">
+      </div>
+      <div class="conteudo">
+        <h1>{{servico.titulo}}</h1>
+        <h2>{{servico.nomePorteiro}}</h2>
+        <p>{{servico.descricao}}</p>
+        <button>{{servico.botao}}</button>
+      </div>
+  
+    </section>
+  
+    {% endfor %}
+  
+    <!--Modal Comunicados-->
+        <div id="modal" class="hide addScroll">
+      <div class="content">
+        <h1>Novo Comunicado</h1>
+  
+        <form action="">
+  
+          <div class="input-wrapper">
+            <label for="titulo">Titulo do Comunicado</label>
+            <input type="text" name="titulo" id="titulo">
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="nomePorteiro">Categoria</label>
+            <input type="text" name="nomePorteiro" id="nomePorteiro">
+          </div>
+  
+          <div class="input-wrapper">
+            <label>Grau de Urgência</label>
+            <div id="grauUrgencia">
+              <div>
+                <input type="radio" name="grau" id="poucoUrgente" checked> <label for="poucoUrgente">Pouco Urgente</label>
+              </div>
+              <div>
+                <input type="radio" name="grau" id="normal"> <label for="normal">Normal</label>
+              </div>
+              <div>
+                <input type="radio" name="grau" id="urgente"> <label for="urgente">Urgente</label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="descricao">Digite uma descrição para a ocorrência</label>
+            <textarea name="descricao" id="" cols="30" rows="7"></textarea>
+          </div>
+  
+          <a href="#" onclick="onOff()">Voltar</a>
+          <button type="button">Salvar</button>
+  
+        </form>
+  
+      </div>
+    </div>
+  
+  </div>

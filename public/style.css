@@ -1,0 +1,525 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: montserrat;
+    src: url(../fonts/montserrat/Montserrat-Regular.ttf);
+}
+#comunicados.hide,
+#servicos.hide{
+    display: none;
+}
+
+#modal.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.buttons{
+    width: 80%;
+    height: auto;
+    margin: auto auto 30px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button{
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 12pt;
+    font-weight: 500;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    background-image: linear-gradient(to top left, rgb(160, 160, 160), rgb(255, 255, 255), rgb(160, 160, 160));
+}
+
+button:hover{
+    background-image: linear-gradient(to top, rgb(160, 160, 160), rgb(255, 255, 255), rgb(160, 160, 160));
+    box-shadow: 5px 5px 15px rgb(158, 158, 158);
+}
+
+h2{
+    width: 90%;
+    height: auto;
+    margin: auto auto 3% auto;
+    padding-top: 20px;
+    text-align: left;
+    font-size: 20pt;
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: montserrat;
+    background-color: rgb(180, 180, 180);
+}
+
+#container{
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    align-items: initial;
+    justify-content: initial;
+}
+
+#container main{
+    position: relative;
+    width: 25%;
+    height: auto;
+    margin: 0 auto auto 0;
+    padding: 30px;
+    text-align: center;
+    border-right: 1px solid rgb(197, 197, 197);
+}
+
+#container main img{
+    width: 60%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#container main h1{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bolder;
+    color: rgb(71, 71, 71);
+}
+
+#container main #porteiro{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 13pt;
+    color: rgb(71, 71, 71);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#container main #porteiro p{
+    font-weight: bolder;
+}
+
+#container main #porteiro p#nomePorteiro{
+    font-weight: 500;
+}
+
+#container main menu{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0;
+}
+
+#container main menu div.box{
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+    padding: 10px 0;
+    border:  1px solid rgb(160, 160, 160);
+    border-radius: 5px;
+    list-style: none;
+    cursor: pointer;
+    background-image: linear-gradient(to top left, rgb(160, 160, 160), rgb(255, 255, 255), rgb(160, 160, 160));
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#container main menu div.box:hover{
+    background-image: linear-gradient(to top, rgb(160, 160, 160), rgb(255, 255, 255), rgb(160, 160, 160));
+}
+
+#container main menu div.box li{
+    width: 90%;
+    height: auto;
+    margin: auto 0 auto auto;
+    padding-right: 15px;
+    text-align: right;
+    font-size: 14pt;
+    font-weight: 500;
+    list-style: none;
+}
+
+#container main menu div.box .led{
+    width: 18px;
+    height: 18px;
+    margin: auto auto auto 15px;
+    border-radius: 100%;
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(116, 116, 116));
+}
+
+#container main menu div.box:hover .led{
+    background-image: radial-gradient(rgb(253, 255, 160), rgb(255, 187, 0));
+}
+
+#container section#paginas{
+    position: relative;
+    width: 75%;
+    height: auto;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#container section#paginas header#box-header{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container section#paginas header#box-header div#opcoes{
+    position: absolute;
+    width: 1%;
+    height: auto;
+    top: auto;
+    right: 65px;
+    padding: 10px 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 2px solid rgb(160, 160, 160);
+    background-color: rgba(0, 0, 0, 1);
+    transition: 0.5s;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#container section#paginas header#box-header div#opcoes a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1pt;
+    transition: 0.5s;
+}
+
+#container section#paginas header#box-header:hover div#opcoes{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    margin: auto -15px auto auto;
+    padding: 10px 50px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 2px solid rgb(160, 160, 160);
+    background-color: rgba(0, 0, 0, 1);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#container section#paginas header#box-header:hover div#opcoes a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+#container section#paginas header#box-header #menu-box-header{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: auto 15px auto auto;
+    padding: 8px;
+    text-align: center;
+    border: 4px solid rgb(160, 160, 160);
+    border-radius: 300px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+}
+
+#container section#paginas header#box-header #menu-box-header div{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#container section#paginas header#box-header #menu-box-header div div.barras{
+    width: 35px;
+    height: 4px;
+    margin: 4px auto;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+#container section#paginas header#box-header:hover #menu-box-header div div.barras{
+    transform: rotate(180deg);
+}
+
+#container section#paginas header#box-header:hover #menu-box-header div div.barras:nth-child(2){
+    transform: rotate(-180deg);
+}
+
+/* Configuração do container-paginas */
+#container-paginas{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: rgb(231, 231, 231);
+}
+
+/* Configuração da pagian COMUNICADOS */
+div#comunicados,
+div#servicos{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    transition: 0.8s;
+}
+
+/*Blocos*/
+.blocos{
+    width: 90%;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px -8px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+}
+
+.blocos div.img{
+   width: 50px;
+   height: 50px;
+   margin: 20px auto auto 20px;
+}
+
+.blocos div.img img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto auto 0;
+}
+
+.blocos div.conteudo{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.blocos div.conteudo h1{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: left;
+    font-size: 18pt;
+    font-weight: bold;
+    color: rgb(90, 90, 90);
+}
+
+.blocos div.conteudo h2{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: left;
+    font-size: 15pt;
+    font-weight: 600;
+    color: rgb(116, 116, 116);
+}
+
+.blocos div.conteudo p{
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    text-align: justify;
+    font-size: 13pt;
+    font-weight: 300;
+    color: rgb(32, 32, 32);
+}
+
+/*Modal*/
+#modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: montserrat;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: center;
+}
+
+#modal.addScroll{
+    overflow: auto;
+}
+
+#modal .content{
+    margin-top: 2%;
+    color: #ffffff;
+}
+
+#modal .content h1{
+    font-size: 20pt;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal form{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 15% auto;
+    padding-bottom: 10%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.content form div:nth-child(3){
+    grid-column: span 2;
+}
+
+.content form div:nth-child(4){
+    grid-column: span 2;
+}
+
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(141, 25, 52, 0.5);
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form #grauUrgencia{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form #grauUrgencia div{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+form #grauUrgencia div input{
+    width: 10%;
+    height: auto;
+    margin: auto;
+}
+
+form #grauUrgencia div:nth-child(1){
+    text-align: left;
+    color: rgb(0, 175, 0);
+}
+
+
+form #grauUrgencia div:nth-child(2){
+    text-align: center;
+    color: rgb(255, 255, 0);
+}
+
+form #grauUrgencia div:nth-child(3){
+    text-align: right;
+    color: rgb(255, 0, 0);
+}
+
+form #grauUrgencia div label{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    font-size: 12pt;
+}
+
+form label{
+    font-size: 14pt;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+form button{
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 32px;
+    grid-column: 2;
+    justify-self: end;
+    transition: 0.5s;
+}
+
+form button:hover{
+    background-color: #0984e3;
+    color: white;
+    text-decoration: none;
+}
+
+form a{
+    width: 150px;
+    height: 40px;
+    background-color: #ffffff44;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.5s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: end;
+}
+
+form a:hover{
+    background-color: #ffffff;
+    color: #ff5e84;
+    text-decoration: none;
+}
